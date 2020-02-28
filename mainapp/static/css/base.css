@@ -1,0 +1,58 @@
+/*바디 틀이 프레임*/
+
+.frame {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 3px solid #aaa;
+    border-radius: 30px;
+  }
+
+  /* 검색창 */
+.search input[type=text] {
+    float: center; 
+    width: 800px;
+    margin-left: 100px;
+    border: 3px solid #aaa;
+    /*font-size: 17px; */
+  }
+
+  .header {
+    padding:20px 10px;
+    text-align: center;
+    background: #0054A7;
+    margin-bottom: 20px;
+    border-radius: 25px 25px 0px 0px;
+  }
+
+  .content {
+    /* float: left; */
+    width: 800px;
+    margin-left: 100px;
+  }
+
+  .container {
+    overflow: hidden; 
+    display: table;
+    margin: auto;
+  }
+  .footer {
+    display: table-cell;
+    font-size: 15px;
+  }
+
+  .logo{
+    display: table-cell;
+  } 
+
+  .signup{
+    text-align: left;
+    padding:100px 100px;
+    margin: 100px;
+  }
+
+  .login{
+    text-align: left;
+    padding:80px 100px;
+    margin: 100px;
+  }

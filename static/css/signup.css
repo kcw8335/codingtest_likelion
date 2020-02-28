@@ -1,0 +1,14 @@
+.signup{
+    text-align: left;
+    margin:  100px 300px 50px 300px;
+  }
+
+  .signup_container
+  {
+      text-align: center;
+  }
+
+  .text
+  {
+      border: 3px solid rgb(245, 151, 151);
+  }

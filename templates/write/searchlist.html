@@ -1,0 +1,30 @@
+{% extends 'write/base.html'%}
+{% load static %}
+
+{% block content %}
+    <!--각자 페이지 마다 콘텐츠 들어갈 부분-->
+  <div class="content">
+    <h2>{{searchtext}}</h2>
+    <br>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">과목명</th>
+            <th scope="col">교수명</th>
+            <th scope="col">추천수</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for subjects in subject.all %}
+              <tr>
+                <td>{{subjects.subject_name}}</td>
+                <td><a href="{%url 'write:detail'%}" style="color:black">{{subjects.professor}}</a></td>
+                <td>@mdo</td>
+              </tr>
+            {% endfor %}
+        </tbody>
+        <br>
+      </table>
+
+<!--각자 페이지 마다 콘텐츠 들어갈 부분 끝-->
+{%endblock%}

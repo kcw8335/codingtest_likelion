@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>base</title>
+<link rel="stylesheet" href="base.css"> <!--절대경로설정할것 -->
+</head>
+<body>
+<div class="frame">       
+  <div class="header">
+    <h2>대학강의평가 멋사</h2>
+  </div>        
+<!-- //header -->  
+    <!--각자 페이지 마다 콘텐츠 들어갈 부분-->
+
+  <div class="content">
+    {% block content %}
+    {% endblock %}
+  </div> 
+<!--각자 페이지 마다 콘텐츠 들어갈 부분 끝-->
+<div class="container">
+   <!--절대경로설정할것 -->
+  <div class="logo"><img src="logo.png" width="120px"> </div>
+  <div class="footer" >조선대학교 멋쟁이 사자처럼 김창우 김미영 마서연 한지원 윤지유</div>
+    
+  </div> <!-- //footer -->
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>base</title>
+<link rel="stylesheet" href="../../static/css/base.css">
+<link rel="stylesheet" href="../../static/css/write.css">
+</head>
+
+<body>
+<div class="frame">       
+  <div class="header">
+    <h2>대학강의평가 멋사</h2>
+    <pre><a href="">login</a>   <a href="">signup</a>   <a href="">index</a>   <a href="">detail</a>   <a href="">write</a></pre>
+   
+  </div>        
+  <div class = "menu">
+    <img src="../../static/img/back.jpg" width="40px">
+  </div>
+    <!--각자 페이지 마다 콘텐츠 들어갈 부분-->
+
+  <div class="content">
+    
+    <div class = "title">
+        <h1>새 강의평 쓰기</h1>
+    </div>
+
+    <div class = "line"> </div>
+
+    
+    <div class = "choice">
+      <h3>과제</h3>
+      <input type="radio" name="group1" value="1" /> 많음 
+      <input type="radio" name="group1" value="2" /> 보통
+      <input type="radio" name="group1" value="3" /> 없음
+
+      <h3>팀플</h3>
+      <input type="radio" name="group2" value="1" /> 있음 
+      <input type="radio" name="group2" value="2" /> 없음
+      
+      <h3>학점비율</h3>
+      <input type="radio" name="group3" value="1" /> 잘줌 
+      <input type="radio" name="group3" value="2" /> 깐깐함
+      <input type="radio" name="group3" value="3" /> F주의
+
+      <h3>출결</h3>
+      <input type="radio" name="group4" value="1" />호명
+      <input type="radio" name="group4" value="2" /> 전자출결
+      <input type="radio" name="group4" value="3" /> 안함
+
+      <h3>시험횟수</h3>
+      <input type="radio" name="group5" value="1" />3번이상
+      <input type="radio" name="group5" value="2" /> 두번
+      <input type="radio" name="group5" value="3" /> 한번
+      <input type="radio" name="group5" value="4" /> 없음
+    
+    </div>
+    
+    <div class = "line"> </div>
+
+    <div class = "good">
+        <h3>추천</h3>
+        
+        
+        <pre><img class="like" src="../../static/img/like.jpg" width="40px" >     <img class="unlike" src="../../static/img/unlike.jpg" width="40px"></pre>
+
+
+    </div>
+
+    <div class = "line"> </div>
+
+    <div class = "year">
+      <label for="year">수강학기</label>
+      <br>
+      <br>
+      <select id="year">
+        <option value="20192">2019-2학기</option>
+        <option value="20191">2019-1학기</option>
+        <option value="20182">2018-2학기</option>
+
+      </select>
+
+    </div>
+
+    <div class = "line"> </div>
+
+    <div class = "text">
+        <pre>네모칸씨에스에스 한거 안에 글자제한 500자로 텍스트 작성하게하기</pre>
+    </div>
+
+    <div class = "upload">
+        <form>
+            <input type = "button" value = "제출하기" />
+        </form>
+    </div>
+  </div> 
+<!--각자 페이지 마다 콘텐츠 들어갈 부분 끝-->
+<div class="container">

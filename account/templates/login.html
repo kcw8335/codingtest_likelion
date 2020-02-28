@@ -1,0 +1,29 @@
+{% extends 'write/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+</html>
+{% block content %}
+<form id="login" action="{%url 'account:login'%}" method="POST">
+    {% csrf_token %}
+<fieldset>
+  
+<div class="login">
+    <ul class="login_top">
+        <li style="list-style:none;"><label for="username">아이디</label><input type="text" id="username" name="username"></li>
+        <li style="list-style:none;"><label for="Password">비밀번호</label><input type="password" id="Password" name="password"></li>
+        <li class="save" style="list-style:none;"><input type="checkbox" id="chk1"><label for="chk1">아이디저장</label></li>
+        <li class="log_btn" style="list-style:none;"><a href="javascript:{document.getElementById('login').submit()}">로그인</a></li>
+        
+    </ul>
+
+</div>
+</fieldset>
+</form>
+{% endblock %}

@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="title" style="background-color: black">회원가입</div>
+    <div class="body" style="background-color:pink">
+    <form method="post" action="{% url 'user:join' %}">
+    {% csrf_token %}
+    {% for field in form %}
+    <div class="form-group" style="background-color: rgba(245, 245, 245, 0);">
+        <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+        <input type="{{ field.field.widget.input_type }}"
+            class="form-control {% if field.errors|length > 0 %}is-invalid{% endif %}"
+            id="{{ field.id_for_label }}" name="{{ field.html_name }}"
+            value="{{ field.value|default_if_none:'' }}"
+            style="background-color: rgba(245, 245, 245, 0);">
+        {% for error in field.errors %}
+        <div class="invalid-feedback">{{ error }}</div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+    <button type="submit" class="btn" style="background-color: rgba(245, 245, 245, 0);">가입</button>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+{% endblock %}

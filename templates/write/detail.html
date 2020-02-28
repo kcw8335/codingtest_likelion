@@ -1,0 +1,82 @@
+{% extends 'write/base.html'%}
+{% load static %}
+
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/detail.css' %}">
+    <title>detail</title>
+
+</head>
+
+
+
+    <div class="wrapper">
+        <div class="item info">
+            <div class="info-context">검색한 과목명</div>
+            <div class="info-context">교수명</div>
+            <div class="info-context">마서연</div>
+        </div>
+    
+
+        <!-- 평가들을 합산한 결과 -->
+        <div class="item fb-sum">
+            <div class="fb-sum-context">강의평</div>
+            <div class="fb-sum-context"><a href="{% url 'write:create' %}">새 강의평 쓰기</a></div>
+
+            <div class="fb-sum-context">좋아요</div>
+            <div class="fb-sum-context">싫어요</div>
+            <div class="fb-sum-context">과제</div>
+            <div class="fb-sum-context">보통</div>
+            <div class="fb-sum-context">조모임</div>
+            <div class="fb-sum-context">없음</div>
+            <div class="fb-sum-context">학점비율</div>
+            <div class="fb-sum-context">비율 채워줌</div>
+            <div class="fb-sum-context">출결</div>
+            <div class="fb-sum-context">직접호명</div>
+            <div class="fb-sum-context">시험횟수</div>
+            <div class="fb-sum-context">2번</div>
+        </div>
+
+      <!-- 강의평 감싸는 박스 -->
+        <div class="item feedback">
+    <!-- <p>강의평 감싸는 박스</p> -->
+            <div class="feedback-context">익명</div>
+            <!-- <div class="feedback-context"><p style="text-align: right;">추천</p></div> -->
+            <div class="feedback-context"><p style="text-align: right;">삭제</p></div>
+            <div class="feedback-context">19년도 2학기 수강자</div>
+            <div class="feedback-context">교수님 진짜 성격도 좋고 다 좋습니다.</div>
+        </div>
+
+        <div class="item feedback">
+            <!-- <p>강의평 감싸는 박스</p> -->
+            <div class="feedback-context">익명</div>
+            <!-- <div class="feedback-context"><p style="text-align: right;">추천</p></div> -->
+            <div class="feedback-context"><p style="text-align: right;">삭제</p></div>
+            <div class="feedback-context">19년도 2학기 수강자</div>
+            <div class="feedback-context">그냥 들으세요 믿듣</div>
+        </div>
+        
+        <div class="item feedback">
+        <!-- <p>강의평 감싸는 박스</p> -->
+            <div class="feedback-context">악명</div>
+            <!-- <div class="feedback-context"><p style="text-align: right;">추천</p></div> -->
+            <div class="feedback-context"><p style="text-align: right;">삭제</p></div>
+            <div class="feedback-context">19년도 2학기 수강자</div>
+            <div class="feedback-context">꿀강</div>
+        </div>
+    </div>          
+  
+{% endblock %}
+
+
+
+<!-- 쿼리셋 메소드들
+.all() lec클래스에서 만든 모든 객체(쿼리셋)를 가져오는 메소드 -->
+<!-- .count() 객체 개수 반환 
+.first() 첫번째 객체 반환
+.last() 마지막 객체 반환 -->

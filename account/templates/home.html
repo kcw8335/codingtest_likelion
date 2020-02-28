@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>base</title>
+<link rel="stylesheet" href="../../static/css/base.css">
+<link rel="stylesheet" href="../../static/css/home.css">
+</head>
+<body>
+<div class="frame" style="height: 850px;">       
+  <div class="header">
+    <h2>대학강의평가 멋사</h2>
+    <pre><a href="">login</a>   <a href="">signup</a>   <a href="">index</a>   <a href="">detail</a>   <a href="../../write/templates/write.html">write</a></pre>
+  </div>        
+<div class="nav">
+      <a href="">logout</a>
+    </div>
+    {% block content %}
+  <div class="content">
+    {% endblock %}
+    <div class="myaccount">
+      <img src="../../static/img/likelion.png" width="300px" class ="center">
+      <h2>chosun</h2>
+    </div>
+  </div> 
+
+<div class="container">
+
+  <div class="logo"><img src="../../static/img/logo.jpg" width="120px"> </div>
+  <div class="footer" >조선대학교 멋쟁이 사자처럼 김창우 김미영 마서연 한지원 윤지유</div>
+    
+</div>
+</div>
+</body>
+</html>
