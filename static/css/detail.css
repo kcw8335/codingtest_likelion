@@ -1,0 +1,129 @@
+/*바디 틀이 프레임*/
+
+  /* 추가한 코드 */
+
+
+  .wrapper {
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    /* color: rgb(21, 104, 104); */
+    width: 100%;
+    /* margin: 0 auto; */
+    grid-template-rows: 100px 280px;
+    row-gap: 20px;
+    grid-auto-rows: 200px;
+  }
+  .item {
+    /* background-color: burlywood; */
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    grid-template-columns : 29% 66%;
+    column-gap: 3%;
+    row-gap: 5px;
+  
+  
+    /* grid-template-rows: 50px;*/
+  }
+  .info-context, .fb-sum-context, .feedback-context {
+    background-color: rgb(255, 255, 255);
+    color: rgb(66, 38, 0);
+  }
+  .info-context:first-child {
+    font-weight: 900;
+    grid-column : span 2;
+    padding-bottom: 1%;
+  }
+  
+  /* how to use grid-layout */
+  
+  /* grid-template-columns : 50% 50%; */
+  /* grid-template-columns : 40% 60%; */
+  /* grid-template-columns : repeat(5, 50%);  6행이 50 : 50으로 나눠짐*/
+  /* grid-template-columns : 1fr 2fr; 1 : 2 비율로 나눠짐*/
+  /* grid-columns : span 2;  1*2인 것을 1*1로 병합*/
+    /* grid-column-start: 1; frame병합
+    grid-column-end: 2; */
+  
+  
+  .fb-sum {
+    display: grid;
+  
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    grid-template-columns : 29% 66%;
+    column-gap: 3%;
+    row-gap: 5px;
+    /* padding-bottom: 20px; */
+  
+  
+    /* grid-template-rows: 100px; */
+  }
+  
+  
+  .fb-sum-context:first-child {
+    font-weight: 900;
+    padding-bottom: 3%;
+  }
+  .fb-sum:last-child {
+    /* font-weight: 900; */
+    padding-bottom: 3%;
+  }
+  
+  .hidden{display:none}
+  
+  
+  
+  .feedback {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    grid-template-columns : 66% 29%;
+    column-gap: 3%;
+    grid-template-rows: 1fr 0.5fr 7fr;
+    row-gap: 2.5%;
+    /* background-color: rgb(255, 136, 107); */
+    /* grid-template-rows: 150px; */
+  }
+  
+  .feedback-context:first-child {
+    font-weight: 900;
+  }
+  
+  .feedback-context:nth-child(3) {
+    font-size: small;
+    grid-column : span 3;
+    /* padding-bottom: 3%; */
+  }
+  
+  .feedback-context:last-child {
+    font-size: unset;
+    grid-column : span 3;
+    overflow-y: scroll;
+    /* grid-template-rows: 70%;  */
+    /* padding-bottom: 3%; */
+  }
+  
+  
+  
+  
+  
+  /* 푸터에다 적용한 마진부분 지우고 마지막 내용 요소에 바닥마진으로 바꾸기 */
+  
+  /* .container {
+    margin-top: 5%;
+  } */
