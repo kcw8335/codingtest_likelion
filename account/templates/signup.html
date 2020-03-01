@@ -3,9 +3,10 @@
 
 {% block content %}
 <div class="signup_container">
-<form action="{%url 'account:signup'%}" method="POST">
-    {% csrf_token %}
     <h2>회원가입</h2>
+    <form action="{%url 'account:signup'%}" method="POST">
+        {% csrf_token %}
+    
     <div class="agreement">
         <div class="text">
             <span>가입약관</span>
@@ -17,7 +18,6 @@
         <label for="accept">
             <input type="checkbox" name="accept" id="accept"> 약관을 모두 읽었으며 동의합니다.
         </label>
-
     </div>
 </div>
 
